@@ -8,13 +8,29 @@ Here is a list of them:
 - #### *Packman*
 - #### *Maze*
 
+## Doodle<br>
+ 
 
 ![](Doodle.gif)
+
+## Car Crash<br>
 
 
 ![](CarCrash.gif)
 
+## Dino<br>
+
+
 ![](Dino.gif)
 
+## Packman<br>
+
+
+![](xtahrSn8wa8.jpg)
 ![](packman.gif)
+
+## Time Maze<br>
+
+
+![](-G7ikE5yiKc.jpg)
 
