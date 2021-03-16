@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80b415c2-041d-4d9a-bc5b-5bd410a0e775" name="Default Changelist" comment="add Car Crash game">
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/Doodle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/Ledge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/MGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/doodle/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/Coin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/Maze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/MenuGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/silentPlace/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +69,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
