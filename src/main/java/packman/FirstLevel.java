@@ -1,4 +1,4 @@
-package ru.bstu.packman;
+package packman;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,22 +11,22 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class FirstLevel extends JPanel implements ActionListener {
-    private final Image background = new ImageIcon("BSTU/src/main/resources/bg1.png").getImage();
-    private final Image hero = new ImageIcon("BSTU/src/main/resources/Hero.png").getImage();
-    private final Image monster = new ImageIcon("BSTU/src/main/resources/Monster.png").getImage();
-    private final Image block = new ImageIcon("BSTU/src/main/resources/Block1.jpg").getImage();
-    private final Image coin = new ImageIcon("BSTU/src/main/resources/Coin.png").getImage();
-    private final Image title = new ImageIcon("BSTU/src/main/resources/Title.jpg").getImage();
+    private final Image background = new ImageIcon("/src/main/resources/bg1.png").getImage();
+    private final Image hero = new ImageIcon("/src/main/resources/Hero.png").getImage();
+    private final Image monster = new ImageIcon("/src/main/resources/Monster.png").getImage();
+    private final Image block = new ImageIcon("/src/main/resources/Block1.jpg").getImage();
+    private final Image coin = new ImageIcon("/src/main/resources/Coin.png").getImage();
+    private final Image title = new ImageIcon("/src/main/resources/Title.jpg").getImage();
 
     private int score = 0;
     private int caught = 0;
 
-    private Player player;
-    private Monster monster1;
-    private Monster monster2;
-    private Monster monster3;
+    private final Player player;
+    private final Monster monster1;
+    private final Monster monster2;
+    private final Monster monster3;
 
-    private Timer timer = new Timer(250, this);
+    private final Timer timer = new Timer(250, this);
 
     private final Integer[][] field = {
             {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},
@@ -71,7 +71,6 @@ public class FirstLevel extends JPanel implements ActionListener {
         timer.start();
     }
 
-    // Считывание собития и его обработка
     @Override
     public void actionPerformed(ActionEvent e) {
         player.move(field);
@@ -111,7 +110,6 @@ public class FirstLevel extends JPanel implements ActionListener {
         checkCoins();
         repaint();
     }
-    // Проверка наличия монет на поле, если монет нет вывод диалогового окна о заверщении уровня
     private void checkCoins() {
         var coinCounter = Stream.of(field)
                 .flatMap(Arrays::stream)
@@ -126,7 +124,7 @@ public class FirstLevel extends JPanel implements ActionListener {
 
         }
     }
-    // Отрисовка компонентов
+
     public void paint(Graphics g) {
         g.drawImage(background, 0, 0, 1000, 900, null);
         buildField(g);
@@ -134,7 +132,7 @@ public class FirstLevel extends JPanel implements ActionListener {
         g.setColor(new Color(248, 114, 33));
         g.drawString("Счет: " + score, 750, 37);
     }
-    // Построение графической состовляющей игрового поля
+
     private void buildField(Graphics g) {
         int x = 0;
         int y = 0;

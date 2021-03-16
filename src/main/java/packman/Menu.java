@@ -1,4 +1,4 @@
-package ru.bstu.packman;
+package packman;
 
 import javax.swing.*;
 import java.awt.*;
@@ -6,27 +6,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-// Класс вывода панели меню
-// start - Кнопка запуска окна вывода уровней
-// info - Кнопка вызова диалогового окна со справкой о разработчике
-// exit - Кнопка закрытия окна и завершения работы программы
-// firstLevel - кнопка вызова первого уровня
-// secondLevel - кнопка вызова второго уровня
-// thirdLevel - кнопка вызова третьего уровня
+
 public class Menu extends JFrame implements ActionListener, MouseListener {
 
-    private JButton start = new JButton("Запуск!");
-    private JButton info = new JButton("О программе");
-    private JButton exit = new JButton("Выход");
-    private JButton firstLevel = new JButton("1");
-    private JButton secondLevel = new JButton("2");
-    private JButton thirdLevel = new JButton("3");
-    // Считывание собития и перерисовка окна
+    private final JButton start = new JButton("Запуск!");
+    private final JButton info = new JButton("О программе");
+    private final JButton exit = new JButton("Выход");
+    private final JButton firstLevel = new JButton("1");
+    private final JButton secondLevel = new JButton("2");
+    private final JButton thirdLevel = new JButton("3");
     @Override
     public void actionPerformed(ActionEvent e) {
         repaint();
     }
-    // Вывод меню
+
     public void menuFrame() {
         setTitle("Пакман");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -123,12 +116,13 @@ public class Menu extends JFrame implements ActionListener, MouseListener {
             });
         });
 
-        info.addActionListener(e -> JOptionPane.showMessageDialog(Menu.this, "Программа выполнена на языке Java\nРазработчик: Жохов Антон\nГруппа: И881"));
+        info.addActionListener(e -> JOptionPane.showMessageDialog(Menu.this, "Программа выполнена на языке Java\n" +
+                "Разработчик: Чередниченко Михаил\n" +
+                "Группа: И881"));
 
         exit.addActionListener(e -> System.exit(1));
     }
 
-    // Вывод окна уровней
     private void showLevels() {
         setContentPane(new MenuPanel(1));
         setVisible(true);

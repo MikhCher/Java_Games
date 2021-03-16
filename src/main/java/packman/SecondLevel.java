@@ -1,4 +1,4 @@
-package ru.bstu.packman;
+package packman;
 
 import javax.swing.*;
 import java.awt.*;
@@ -21,12 +21,12 @@ public class SecondLevel extends JPanel implements ActionListener {
     private int score = 0;
     private int caught = 0;
 
-    private Player player;
-    private Monster monster1;
-    private Monster monster2;
-    private Monster monster3;
+    private final Player player;
+    private final Monster monster1;
+    private final Monster monster2;
+    private final Monster monster3;
 
-    private Timer timer = new Timer(250, this);
+    private final Timer timer = new Timer(250, this);
 
     private final Integer[][] field = {
             {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1},

@@ -1,7 +1,7 @@
-package ru.bstu.packman;
+package packman;
 
 import java.util.Random;
-// Класс поведения вражеских существ
+
 public class Monster {
     private int ver;
     private int hor;
@@ -9,7 +9,6 @@ public class Monster {
     private int mapX;
     private int mapY;
 
-    private int speed = 50;
     private Direction dir = Direction.NONE;;
 
     public Monster(int ver, int hor, int x, int y) {
@@ -18,17 +17,13 @@ public class Monster {
         this.mapX = x;
         this.mapY = y;
     }
-    // Получение абсциссы монстра
     public int getMapX() {
         return mapX;
     }
-    // Получение ординаты монстра
     public int getMapY() {
         return mapY;
     }
-    // Шаг монстра.
-    // Если объект находится на развилке, направление движение выбирается псевдослучайным способом.
-    // В противном случае идет в выбранном направлении
+
     public void move(Integer[][] field) {
         int left = field[ver][hor - 1];
         int right = field[ver][hor + 1];
@@ -71,28 +66,29 @@ public class Monster {
 
         }
 
+        int speed = 50;
         switch(dir) {
             case UP:
                 ver--;
-                mapY-=speed;
+                mapY-= speed;
                 break;
             case DOWN:
                 ver++;
-                mapY+=speed;
+                mapY+= speed;
                 break;
             case LEFT:
                 hor--;
-                mapX-=speed;
+                mapX-= speed;
                 break;
             case RIGHT:
                 hor++;
-                mapX+=speed;
+                mapX+= speed;
                 break;
             default:
                 break;
         }
     }
-    // Проверка совпадение координат игрока с координатами монстра
+
     public boolean eat(Player player) {
         return hor == player.getHor() && ver == player.getVer();
     }

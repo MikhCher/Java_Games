@@ -1,12 +1,10 @@
-package ru.bstu.packman;
+package packman;
 
 import javax.swing.*;
 import java.awt.event.KeyEvent;
-// Класс, отвечающий за поведение игрока
 public class Player  {
     private int ver = 13;
     private int hor = 9;
-    private int speed = 50;
 
     private int mapX;
     private int mapY;
@@ -38,6 +36,7 @@ public class Player  {
     }
 
     public void move(Integer[][] field) {
+        int speed = 50;
         switch(playerDirection) {
             case UP: {
                 if (field[ver - 1][hor] == 0 || field[ver - 1][hor] == -1) {
@@ -80,7 +79,6 @@ public class Player  {
                 break;
         }
     }
-    // Считывание и обработка нажатой клавиши
     public void keyPressed(KeyEvent e) {
         int key = e.getKeyCode();
         if(key == KeyEvent.VK_W) {

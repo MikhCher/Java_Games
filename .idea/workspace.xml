@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80b415c2-041d-4d9a-bc5b-5bd410a0e775" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Java_Games.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/FirstLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/MenuPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/SecondLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/packman/ThirdLevel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

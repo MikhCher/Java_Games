@@ -1,12 +1,11 @@
-package ru.bstu.packman;
+package packman;
 
 import javax.swing.*;
 import java.awt.*;
-// Класс, отвечающий за графическую состовляющую меню
 public class MenuPanel extends JPanel {
     private int mode;
 
-    private Image bg = new ImageIcon("BSTU/src/main/resources/menu_bg.jpg").getImage();
+    private final Image bg = new ImageIcon("/src/main/resources/menu_bg.jpg").getImage();
 
 
     MenuPanel(int mode) {
@@ -17,9 +16,9 @@ public class MenuPanel extends JPanel {
         if (mode == 0)
             g.drawImage(bg,0,0, 965, 940, null);
         else {
-            Image FB = new ImageIcon("BSTU/src/main/resources/BL1.png").getImage();
-            Image SB = new ImageIcon("BSTU/src/main/resources/BL2.png").getImage();
-            Image TB = new ImageIcon("BSTU/src/main/resources/BL3.png").getImage();
+            Image FB = new ImageIcon("/src/main/resources/BL1.png").getImage();
+            Image SB = new ImageIcon("/src/main/resources/BL2.png").getImage();
+            Image TB = new ImageIcon("/src/main/resources/BL3.png").getImage();
 
 
             g.drawImage(bg,0,0, 965, 940, null);
