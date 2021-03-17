@@ -15,7 +15,7 @@ to go higher - you control whether he jumps right or left.
 Platforms do not move. They are not evenly spaced, 
 so you must move the Doodler by pressing A or D to the left or right respectively
 as he jumps. If you miss a platform and there would not be platform below to land on, 
-you will go into free fall and the game would be over. 
+you will go into free fall, and the game would be over. 
 If you move Doodler far enough to one side,
 the Doodler will leave the screen and appear on the other side
 
@@ -31,7 +31,7 @@ You are controlling the red car only. <br>
 - **D** - to move your car to the right
 
 If you crash into a white car, 
-you will get the number of points scored on the screen and the game will be over.
+you will get the number of points scored on the screen, and the game will be over.
 
 ![](CarCrash.gif)
 
@@ -56,7 +56,7 @@ they move in a random direction.
 - **D** - to move right
 
 If you are caught by a monster, you will lose 25 coins. 
-So if you have less than 25 coins and the monster catch you, the game would be over
+So if you have less than 25 coins, and the monster catch you, the game would be over
 
 
 ![](packman.gif)
