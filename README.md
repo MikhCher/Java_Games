@@ -14,22 +14,24 @@ Your hero automatically jumps from platform to platform
 to go higher - you control whether he jumps right or left. 
 Platforms do not move. They are not evenly spaced, 
 so you must move the Doodler by pressing A or D to the left or right respectively
-as he jumps. If you miss a platform and there isn't one below to land on, you'll go into freefall 
-and end the game. If you move Doodler far enough to one side,
-the Doodler will leave the screen and return on the other side
+as he jumps. If you miss a platform and there would not be platform below to land on, 
+you will go into free fall and the game would be over. 
+If you move Doodler far enough to one side,
+the Doodler will leave the screen and appear on the other side
 
 ![](Doodle.gif) 
 
 ## Car Crash<br>
-In this game you should avoid collision with other cars. Each white car has its own speed and direction.
-You can drive the red car only. <br>
+In this game you have to avoid collision with other cars. Each white car has its own speed and direction. 
+You are controlling the red car only. <br>
 ##### Buttons to control:
-- **W** - to move your car higher
+- **W** - to move your car straight
 - **A** - to move your car to the left
-- **S** - to move your car below
+- **S** - to move your car back
 - **D** - to move your car to the right
 
-If you crash into a white car, you will your score and the game will end immediately.
+If you crash into a white car, 
+you will get the number of points scored on the screen and the game will be over.
 
 ![](CarCrash.gif)
 
@@ -48,23 +50,25 @@ The game offers you 3 levels with unique design and level-design.
 Each level has 3 monsters which moves in a straight line. When they come to crossroad,
 they move in a random direction. 
 ##### Buttons to control:
-- **W** - to move higher
+- **W** - to move straight
 - **A** - to move left
-- **S** - to move below
+- **S** - to move back
 - **D** - to move right
 
-If you are caught by a monster, you will lose 25 coins. If you had less than 25 coins, the game is over.
+If you are caught by a monster, you will lose 25 coins. 
+So if you have less than 25 coins and the monster catch you, the game would be over
+
 
 ![](packman.gif)
 
 ## Time Maze<br>
 Here you need to collect as many coins as possible while the timer is running.<br>
-At the start, the timer counts down for 30 seconds. Each coin increases this value by 15.
+At the start, the timer counts down for 30 seconds. Each coin increases this time value by 15.
 
 ##### Buttons to control:
-- **W** - to move higher
+- **W** - to move straight
 - **A** - to move left
-- **S** - to move below
+- **S** - to move back
 - **D** - to move right
 
 When the timer runs out, the game is over.
